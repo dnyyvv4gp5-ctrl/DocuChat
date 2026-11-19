@@ -3,6 +3,11 @@ import tempfile
 from pathlib import Path
 from uuid import uuid4
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import streamlit as st
 
 from modules.answer_generator import AnswerGenerationError, generate_answer
